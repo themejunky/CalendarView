@@ -64,6 +64,7 @@ public class CalendarView extends LinearLayout {
     private TextView mCurrentMonthLabel;
     private int mCurrentPage;
     private CalendarViewPager mViewPager;
+    private List<EventDay> eventDayList;
 
     private CalendarProperties mCalendarProperties;
 
@@ -379,6 +380,11 @@ public class CalendarView extends LinearLayout {
             mCalendarProperties.setEventDays(eventDays);
             mCalendarPageAdapter.notifyDataSetChanged();
         }
+        eventDayList = eventDays;
+    }
+
+    public List<EventDay> getEvents (){
+        return eventDayList;
     }
 
     /**

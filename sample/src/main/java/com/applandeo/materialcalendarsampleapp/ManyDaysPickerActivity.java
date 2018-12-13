@@ -2,6 +2,7 @@ package com.applandeo.materialcalendarsampleapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -41,6 +42,9 @@ public class ManyDaysPickerActivity extends AppCompatActivity {
         events.add(new EventDay(cal, R.drawable.sample_four_icons));
 
         calendarView.setEvents(events);
+
+        Log.d("Asdgfasdf", String.valueOf(calendarView.getEvents().size()));
+
 
         Button getDateButton = (Button) findViewById(R.id.getDateButton);
         getDateButton.setOnClickListener(v -> {
