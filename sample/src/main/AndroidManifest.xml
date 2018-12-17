@@ -32,6 +32,7 @@
         <activity
             android:name=".RangePickerActivity"
             android:label="Range picker" />
+        
     </application>
 
 </manifest>
