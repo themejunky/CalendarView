@@ -15,5 +15,8 @@
         android:gravity="center"
         android:textSize="14sp" />
 
+    <!-- android:layout_width="@dimen/day_label_size_events_disabled"
+        android:layout_height="@dimen/day_label_size_events_disabled"-->
+
 </LinearLayout>
 
